@@ -47,7 +47,7 @@
     "ejs": "^3.1.10",
     "enhanced-ms": "^4.1.0",
     "helmet": "^8.1.0",
-    "http-proxy-agent": "^7.0.2",
+    "https-proxy-agent": "^7.0.6",
     "husky": "9.1.7",
     "hygen": "^6.2.11",
     "js-yaml": "^4.1.1",
