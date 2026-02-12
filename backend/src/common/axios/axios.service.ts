@@ -35,7 +35,7 @@ export class AxiosService implements OnModuleInit {
   private readonly logger = new Logger(AxiosService.name);
 
   constructor(private readonly configService: ConfigService) {
-    const proxyAgent = new HttpProxyAgent(process.env.CUSTOM_PROXY);
+    const proxyAgent = new HttpProxyAgent(process.env.CUSTOM_PROXY || '');
     this.axiosInstance = axios.create({
       baseURL: this.configService.getOrThrow('REMNAWAVE_PANEL_URL'),
       timeout: 10_000,
